@@ -1,0 +1,11 @@
+module Fling
+  grammar FlingClass
+    rule class
+      'class' space class_identifier block space* 'end'
+    end
+
+    rule class_identifier
+      [A-Z] [a-zA-Z]*
+    end
+  end
+end

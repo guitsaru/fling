@@ -3,9 +3,7 @@ require "fling/version"
 require "treetop"
 require "polyglot"
 
-require "fling/node"
-
-require "fling/parser"
+require "fling/parser.treetop"
 
 module Fling
 end

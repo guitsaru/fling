@@ -1,0 +1,19 @@
+module Fling
+  grammar Statement
+    rule statement
+      method_call <Statement>
+    end
+
+    rule statement_list
+      (statement (space? ',' space? statement)*)?
+    end
+
+    rule method_call
+      method_identifier ('(' statement_list ')')?
+    end
+
+    rule block
+      (newline? space* expression newline)+
+    end
+  end
+end

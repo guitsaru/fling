@@ -1,0 +1,9 @@
+require 'fling/parser/common'
+require 'fling/parser/statement'
+require 'fling/parser/function'
+require 'fling/parser/fling_class'
+
+module Fling
+  grammar Fling
+  end
+end

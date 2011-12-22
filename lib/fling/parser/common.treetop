@@ -1,0 +1,19 @@
+module Fling
+  grammar Common
+    rule expression
+      class / method / statement
+    end
+
+    rule method_identifier
+      !'def' !'class' !'end' [a-z0-9_]+
+    end
+
+    rule newline
+      "\n"+
+    end
+
+    rule space
+      [ \t]
+    end
+  end
+end

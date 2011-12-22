@@ -1,0 +1,9 @@
+module Fling
+  grammar Function
+    rule method
+      'def' space method_identifier space? ':' space* statement
+      /
+      'def' space method_identifier block space* 'end'
+    end
+  end
+end
